@@ -19,7 +19,17 @@ body {
   letter-spacing: 0.03em;
 }
 .list {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /* Logo */
@@ -31,14 +41,18 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
+  text-align: center;
 }
 .logo-span {
   color: var(--accent-color);
 }
+.page-header {
+  background-color: tomato;
+}
 
 /* Основна навігація */
 .site-nav .auth-nav {
-  color: var(--title-text-color);
+  background-color: var(--title-text-color);
 }
 
 .link:focus,
@@ -56,9 +70,14 @@ body {
 
 /* Секція Hero */
 .hero {
+  margin-bottom: 95px;
   background: var(--primary-bg-color);
+  text-align: center;
 }
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 40px;
+  /* background-color: teal; */
   color: var(--slogan-text-color);
   font-weight: 900;
   font-size: 44px;
@@ -68,6 +87,10 @@ body {
   text-transform: uppercase;
 }
 .button {
+  border-radius: 4px;
+  padding: 11px 32px;
+  margin-bottom: 200px;
+
   font: inherit;
   color: var(--slogan-text-color);
   background-color: var(--accent-color);
@@ -83,6 +106,19 @@ body {
 }
 
 /* section переваги компанії */
+/* .list .benefits {
+  display: flex;
+  flex-wrap: wrap;
+} */
+.benefits .item {
+  background-color: tomato;
+  width: 270px;
+  height: 101px;
+}
+
+.item .benefits {
+  margin-bottom: 95px;
+}
 .heading-benefits {
   font-weight: 700;
   font-size: 14px;
